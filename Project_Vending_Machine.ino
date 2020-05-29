@@ -1,3 +1,8 @@
+// AUTHORS AND CREDIT:
+// Hans-Christian Duedahl, Christian Norrig & Rasmus Wendelbo. 
+// ITEK EAAA - 3rd sem - 2020 
+// Last and final iteration - 29/05/2020 
+
 #include <SPI.h>
 #include <MFRC522.h>
 #include <EEPROM.h>
@@ -84,19 +89,18 @@ void setup() {
   lcd_start_message();                // Print a message on the LCD
 
   // These next commands is not part of the code, but a manual way of inserting someones card id, name and currency.
-  // 0-3 reserved to Rasmus, 4-7 to Christian &  8-11 to Hans-Christian
+  // 60-75 reserved to Rasmus Wendelbo and his currency, 220-236 to Christian Norrig and his currency & 380-402 to Hans-Christian Duedahl and his currency
   //EEPROM.write(8, 0x42);
   //EEPROM.write(9, 0x3C);
   //EEPROM.write(10, 0xFE);
   //EEPROM.write(11, 0x0A);
-  // 60-75 reserved to Rasmus Wendelbo and his currency, 220-296 to Chistian and his currency & 380-402 to Hans-Christian and his currency.
   //EEPROM.write(60, 0xC8);                       // Currency
   //EEPROM.write(220, 0xC8);                      // Currency
   //EEPROM.write(380, 0xC8);                      // Currency
   //EEPROM.put(221, "Christian Norrig");         // Name
 }
 
-void resets_variables() {         // Function to resest variables, since alot is used throughout the code
+void resets_variables() {         // Function to resest variables, since a lot is used throughout the code
   //e = 0;
   d = 0;
   r = 1;
