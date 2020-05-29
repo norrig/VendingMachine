@@ -17,4 +17,4 @@ Mount the hardware and the run the script
 Semester project, no more iterations will be done. 
 
 ## Authers 
-Hans-Christian Duedahl, Christian Norrig and Rasmus Vendelbo - ITEK EAAA 2020
+Hans-Christian Duedahl, Christian Norrig and Rasmus Wendelbo - ITEK EAAA 2020
